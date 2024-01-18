@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+</head>
+<body>
+    
+    <form action="">
+        <label for="playerNameInput">Character name</label>
+        <br>
+        <input id="playerNameInput" type="text">
+        <br>
+        <label for="">Starting Skills</label>
+        <br>
+        <ul>
+            <li>
+                <label for="stealthSkill">Stealth</label>
+                <input type="checkbox" name="" id="stealthSkill">
+            </li>
+            <li>
+                <label for="combatSkill">Combat</label>
+                <input type="checkbox" name="" id="combatSkill">
+            </li>
+        </ul>
+        <label for="">Class:</label>
+        <br>
+        <select name="" id="">
+            <option value="fighter">Fighter</option>
+            <option value="thief">Thief</option>
+            <option value="mage">Mage</option>
+        </select>
+        <li>
+                <label for="birthday">Birthday:</label>
+                <br>
+                <input type="date" id="birthday" name="birthday">
+        </li>
+        <label for="">Stats: </label>
+        <ul>
+        <li>
+            <input type="number" name="" id="" min="1" max="20">
+        </li>
+        </ul>
+        <label for="">Allignment</label>
+        <br>
+        <label for="">Lawful</label>
+        <input type="radio" value="lawful" name="Allignment">
+        <br>
+        <label for="">Neutral</label>
+        <input type="radio" value="neutral" name="Allignment">
+        <br>
+        <label for="">Chaotic</label>
+        <input type="radio" value="chaotic" name="Allignment">
+        <br>
+        <label for="">Portrait</label>
+        <input type="file" name="" accept=".png .jpg .jpeg">
+        <br>
+        <button type="button" onclick="createCharacter()">Create</button>
+    </form>
+
+  
+
+<div id="outputsheet">
+    <h1>Character Sheet</h1>
+    <h2>Name</h2>
+    <p id="characterNameOutput"></p>
+</div>
+
+<script src="Code/Code.js"></script>
+</body>
+</html>
