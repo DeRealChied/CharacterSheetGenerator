@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation</title>
+    <link rel="stylesheet" href="../CSS/creation.css">
+</head>
+<body>
+    <form>
+        <h1>Creation Sheet</h1>
+        <p>Welcome to your chararcters creation sheet.</p>
+        <p>Here you are going to create your desired character to go into battle with</p>
+        <label for="playerNameInput">Character name</label>
+        <br>
+        <input id="playerNameInput" type="text">
+        <li>
+            <label for="birthdayDateInput">Birthday:</label>
+            <br>
+            <input type="date" id="birthdayDateInput" name="birthday">
+        </li>
+        <br>
+        <label for="SkillStarter">Starting Skills</label>
+        <br>
+        <ul>
+            <li>
+                <label for="SkillStarterInput">Stealth</label>
+                <input type="checkbox" name="" id="stealthInput">
+            </li>
+            <li>
+                <label for="SkillStarterInput">Combat</label>
+                <input type="checkbox" name="" id="combatInput">
+            </li>
+        </ul>
+        <label for="PlayerClassInput">Class:</label>
+        <br>
+        <select name="" id="playerClassInput">
+            <option value="fighter">Fighter</option>
+            <option value="thief">Thief</option>
+            <option value="mage">Mage</option>
+        </select>
+        <br>
+        <label for="PlayerStats">Stats: </label>
+        <ul>
+        <li>
+            <label for="PlayerHealthInput">Health</label>
+            <input type="number" name="" id="PlayerHealthInput" min="1" max="10">
+        </li>
+        <li>
+            <label for="PlayerSpeedInput">Speed</label>
+            <input type="number" name="" id="PlayerSpeedInput" min="1" max="5">
+        </li>
+        <li>
+            <label for="PlayerStrengthInput">Strength</label>
+            <input type="number" name="" id="PlayerStrengthInput" min="1" max="8">
+        </li>
+        <li>
+            <label for="PlayerStealthInput">Stealth</label>
+            <input type="number" name="" id="PlayerStealthInput" min="1" max="9">
+        </li>
+        </ul>
+        <label for="CharacterAlignmentInput">Character Alignment:</label>
+        <br>
+        <label for="CharacterAlignmentInput">Lawful</label>
+        <input type="radio" value="lawful" name="AlignmentInput">
+        <br>
+        <label for="CharacterAlignmentInput">Neutral</label>
+        <input type="radio" value="neutral" name="AlignmentInput">
+        <br>
+        <label for="CharacterAlignmentInput">Chaotic</label>
+        <input type="radio" value="chaotic" name="AlignmentInput">
+        <br>
+        <button type="button" onclick="ProcessForm()">Create Character</button>
+        <br>
+    </form>
+    <div>
+    <h1 id="playerDetails"></h1>
+    <h2 id="birthdayDetails"></h2>
+    <h3 id="SkillStarter"></h3>
+    <h4 id="PlayerClass"></h4>
+    <h5 id="PlayerHealth"></h5>
+    <h6 id="PlayerSpeed"></h6>
+    <h7 id="PlayerStrength"></h7>
+    <h8 id="PlayerStealth"></h8>
+    <h9 id="PlayerAlignment"></h9>
+    </div>
+    <script src="../Javascript/code.js"></script>
+</body>
+</html>

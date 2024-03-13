@@ -1,0 +1,33 @@
+body
+{
+   background-image: url(https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg?ixlib=rb-1.1.0&rect=0%2C5%2C3840%2C1920&q=45&auto=format&w=1356&h=668&fit=crop);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+
+form
+ {
+    text-align: center;
+    background-image: url(https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.webp?b=1&s=170667a&w=0&k=20&c=0eyjD9xiGItjC1Yklk_q3Ry1Jr0zWAUJ6q8kDmBuyvk=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-color: darkcyan;
+    border-style: outset;
+    border-width: 20px;
+ }
+
+ h1
+ {
+   color: darkblue;
+   font-family: fantasy;
+ }
+
+ p
+ {
+   color: darkblue;
+   font-family: cursive;
+ }
